@@ -1,0 +1,9 @@
+`const` is a signal that the identifier won’t be reassigned.
+
+`let` is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.
+
+`var` is now the weakest signal available when you define a variable in JavaScript. The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.
+
+总结: const标明变量不会被重新赋值，
+         let    变量可以被重新赋值，只可在定义的某个block中使用
+         var   没有限制，约束最弱想干啥都行
