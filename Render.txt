@@ -1,0 +1,3 @@
+What is the purpose of render in react?
+
+render() function takes two arguments, HTML code and an HTML element. The purpose of the function is to display the specified HTML code inside the specified HTML element.
