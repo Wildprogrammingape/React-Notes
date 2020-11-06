@@ -1,0 +1,27 @@
+prop功能： pass data to components
+
+props是在parent component层的render()函数中的属性，
+下一层的component可以在render()中进行调用(raising and handling events)，
+
+比如顶层 APP 中: <Counters onReset={this.handleReset}
+                  	onIncrement={this.handleIncrement}
+                  	onDelete={this.handleDelete}
+     	            />
+
+下层 counters 中:<button 
+          	 	 onClick={this.props.onReset}
+            		className="btn btn-primary btn-sm m-2">Reset
+            	          </button>
+
+
+下层component想调用上层component函数时，需要同过上层的 props
+
+
+Component Tree:
+
+
+                                APP
+	             /         \
+	NavBar	         Counters
+                                              |
+	                         Counter
