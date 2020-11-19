@@ -1,0 +1,6 @@
+
+1. UI states become difficult to handle with vanila JavaScript
+
+2. Focus on business logic, not on preventing your app from exploding
+
+3. Huge ecosystem, active community, high performance
