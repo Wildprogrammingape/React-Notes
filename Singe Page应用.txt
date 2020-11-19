@@ -1,0 +1,22 @@
+
+有两种application, 一种是  single page application（常用），另一种是 multi page applications
+
+
+1.
+
+Single Page Applications:
+
+Only one HTML Page, content is rendered on client, only call ReactDON.render() once 
+
+只有一个HTML页面，内容直接渲染到客户端，只调用一次ReactDOM.render() 函数
+
+
+2.
+
+Multi Page Applications:
+
+multi HTML Pages, content is rendered on Server, call ReactDOM.render() many times
+
+有多个HTML页面，内容渲染到服务器端，调用ReactDOM.render()多次
+
+
