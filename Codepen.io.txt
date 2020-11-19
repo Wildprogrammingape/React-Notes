@@ -1,0 +1,1 @@
+Codepen is a web editor which allows us to write very simple HTML, CSS and JavaScript apps.
