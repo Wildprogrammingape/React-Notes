@@ -1,27 +1,21 @@
-prop功能： pass data to components
+当我们需要dynamically输入argument时，如name、age, 可以用props来实现
 
-props是在parent component层的render()函数中的属性，
-下一层的component可以在render()中进行调用(raising and handling events)，
+例子：
 
-比如顶层 APP 中: <Counters onReset={this.handleReset}
-                  	onIncrement={this.handleIncrement}
-                  	onDelete={this.handleDelete}
-     	            />
+function Person(props){
+  return(
+    <div class="person">
+      <h1>{props.name}</h1>
+      <p>Your age: {props.age}</p>
+    </div>
+  );
+}
 
-下层 counters 中:<button 
-          	 	 onClick={this.props.onReset}
-            		className="btn btn-primary btn-sm m-2">Reset
-            	          </button>
-
-
-下层component想调用上层component函数时，需要同过上层的 props
+ReactDOM.render(<Person name="Long Chen" age="24"/>, document.querySelector('#p1'));
+ReactDOM.render(<Person name="Barry" age="25"/>, document.querySelector('#p2'));
 
 
-Component Tree:
 
 
-                                APP
-	             /         \
-	NavBar	         Counters
-                                              |
-	                         Counter
+
+动态参数格式：  {  }
