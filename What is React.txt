@@ -1,0 +1,11 @@
+¸ÅÄî£º
+React is a JavaScript library for building user interfaces.
+
+ºÃ´¦£º
+React applications run in the browser, not on the server. so the advantage is 
+that we don't have to wait for a server response to get a new page or to render somthing new.
+
+React     Vs      React DOM
+React is all about components, while react dom is then about rendering these components to 
+the real dom.
+
