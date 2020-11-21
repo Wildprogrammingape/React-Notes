@@ -1,0 +1,30 @@
+普通函数格式：
+
+function myFuc(){
+
+}
+
+
+Arrow Function格式：
+
+const myFuc = () =>{
+
+}
+
+为了解决  JavaScript 的 this 关键词
+
+例子，打印name函数：
+
+常规写法：
+
+function printMyName(name){
+   console.log(name);
+}
+
+箭头函数写法：
+
+const printMyName = (name) =>{
+   console.log(name);
+}
+
+最终运行  printMyName("Long Chen");  两种写法获得同一个结果
