@@ -1,0 +1,23 @@
+Primitive Type
+
+number，string, boolean是原始类型
+所有操作直接到内存
+取别名是 real copy
+
+例子：
+const number = 1;
+const num2 = number;   -- real copy，in memory定义另一个变量num2
+
+
+
+object和array，
+赋值操作到内存，
+取别名只是一个指针referencing到原数值
+
+例子：
+
+const Person = {
+	name : 'Long'
+};
+
+const secondPerson  =  Person;   --- 这里的secondPerson只是指针，指向Person
