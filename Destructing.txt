@@ -1,0 +1,18 @@
+魔法赋值：
+
+Array Desstructing 例子：
+
+[a, b] = ['Hello', 'Long']
+
+console.log(a)               ---    Hello
+console.log(b)               ---    Long
+
+
+
+
+Object Destructing 例子：
+
+{name} = {name: 'Long', age: 24}
+
+console.log(name)      --- Long
+console.log(age)         --- undefined
