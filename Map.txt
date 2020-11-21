@@ -1,0 +1,8 @@
+操作 each element of array
+
+
+例子, 数组的平方：
+
+const numbers = [1, 2, 3];
+const doubleNumArray = numbers.map( (num) => {}
+);
