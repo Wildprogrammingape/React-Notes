@@ -1,0 +1,15 @@
+
+...
+
+
+例子：
+
+将旧数组加入新数组：
+
+const newArray = [...oldArray, 1, 2, 3]
+
+函数不限参数数量:
+
+function sortArgs(...args){
+	return args.sort();
+}
