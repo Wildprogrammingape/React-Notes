@@ -1,0 +1,19 @@
+
+两种导入导出格式：
+
+
+1. default export
+
+import person from './person.js';     or
+
+import prs from './person.js';
+
+
+2. named export
+
+import {smth} from './utility.js';     or
+
+import {smth as Smth} from './utility.js';   or
+
+import * as bundled from './utility.js'; 
+*是全部的意思，并将所有变量捆绑到bundle 上，调用时候即为  bundle.name.  bundle.email 等等
