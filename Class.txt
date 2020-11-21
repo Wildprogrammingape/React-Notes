@@ -1,0 +1,20 @@
+JS的类和Java相似：
+
+
+class Person{
+	name = "Long Chen";           （Property）
+	call = () =>{...}	              (Method)
+}
+
+
+instantiate 实例化例子：
+
+const myPerson = new Person();  也用new 关键词
+myPerson.call();   调用method
+console.log(myPerson.name);   调用property
+
+
+
+继承 inheritance例子：
+
+class Person extends SuperClass
