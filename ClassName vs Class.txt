@@ -1,0 +1,10 @@
+className用于JavaScript, 而 class用于 HTML
+
+      <div className="App">
+        <h1>Hi, I am a React App</h1>                         （JS）
+      </div>
+
+
+      <div class="App">
+        <h1>Hi, I am a React App</h1>                         （HTML）
+      </div>
