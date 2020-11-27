@@ -1,0 +1,17 @@
+在作为component的 class中，Property可以理解为变量，直接写在state里：
+
+App.js中：
+
+class App extends Component {
+	state = {
+	   persons: [
+      	     {name : 'Long', age : 24},
+     	     {name : "Barry", age : "25"},
+      	     {name : "Max", age : "28"}
+   	   ]
+	}
+｝
+
+如何改变state的值？
+
+用  this.setState()  这个React自带的函数
