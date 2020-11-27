@@ -1,0 +1,40 @@
+props 就是在component中的attribute,
+
+比如 App.js中:
+
+return (
+      <div className="App">
+        <Person name="Barry" age="25">My Hobbies: Basketball</Person>
+      </div>
+    );
+
+这里attribute 的 name 和 age可以作为props
+在 Person.js使用：
+
+const person = (props) => {
+	return <p>I am a {props.name} and I am {props.age} years old!</p>
+}
+
+结果：
+
+I am a Barry and I am 25 years old!
+
+那么，如何将 <Person>My Hobbies: Basketball</Person> 中间的content 调用出来呢？
+
+在Person.js中：
+const person = (props) => {
+    return (
+        <div>
+            <p>I am a {props.name} and I am {props.age} years old!</p>
+            <p>{props.children}</p>
+        </div>
+    )
+}
+
+
+
+结果：
+
+I am a Barry and I am 25 years old!
+
+My Hobbies: Basketball
