@@ -1,0 +1,13 @@
+React hooks 是一组函数，用来使用functional component 
+
+(正常的 class App extends Component 这种都是 class component)
+
+React hooks格式：
+
+const app = props => {
+
+}
+
+并且将 {Component} 改为  {useState}
+
+
