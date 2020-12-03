@@ -6,7 +6,7 @@
 
 Single Page Applications:
 
-Only one HTML Page, content is rendered on client, only call ReactDON.render() once 
+Only one HTML Page, content is rendered on client, only call ReactDOM.render() once 
 
 只有一个HTML页面，内容直接渲染到客户端，只调用一次ReactDOM.render() 函数
 
