@@ -8,6 +8,14 @@ console.log(a)               ---    Hello
 console.log(b)               ---    Long
 
 
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+
+
+
+console.log(rest);
+// expected output: Array [30,40,50]
+
+
 
 
 Object Destructing 例子：
@@ -16,3 +24,21 @@ Object Destructing 例子：
 
 console.log(name)      --- Long
 console.log(age)         --- undefined
+
+
+
+拓展例子：
+
+const user = {
+    id: 42,
+    is_verified: true
+};
+
+const {id, is_verified} = user;
+
+console.log(id); // 42
+console.log(is_verified); // true 
+
+
+
+
