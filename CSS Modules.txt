@@ -1,0 +1,63 @@
+CSS Modules are a relatively new concept (you can dive super-deep into them here: https://github.com/css-modules/css-modules). With CSS modules, you can write normal CSS code and make sure, that it only applies to a given component.
+
+It's not using magic for that, instead it'll simply automatically generate unique CSS class names for you. And by importing a JS object and assigning classes from there, you use these dynamically generated, unique names. So the imported JS object simply exposes some properties which hold the generated CSS class names as values.
+
+Example:
+
+In Post.css File
+
+.Post {
+    color: red;
+}
+In Post Component File
+
+import classes from './Post.css';
+ 
+const post = () => (
+    <div className={classes.Post}>...</div>
+);
+Here, classes.Post  refers to an automatically generated Post  property on the imported classes  object. That property will in the end simply hold a value like Post__Post__ah5_1 .
+
+So your .Post  class was automatically transformed to a different class (Post__Post__ah5_1 ) which is unique across the application. You also can't use it accidentally in other components because you don't know the generated string! You can only access it through the classes  object. And if you import the CSS file (in the same way) in another component, the classes  object there will hold a Post  property which yields a different (!) CSS class name. Hence it's scoped to a given component.
+
+By the way, if you somehow also want to define a global (i.e. un-transformed) CSS class in such a .css  file, you can prefix the selector with :global .
+
+Example:
+
+:global .Post { ... } 
+
+Now you can use className="Post"  anywhere in your app and receive that styling.
+
+
+
+
+
+CSS模块是一个相对较新的概念（您可以在这里深入了解它们：https :  //github.com/css-modules/css-modules）。使用CSS模块，您可以编写普通的CSS代码并确保它仅适用于给定的组件。
+
+它并没有使用魔术，而是会自动为您自动生成唯一的CSS类名称。通过导入JS对象并从那里分配类，您可以使用这些动态生成的唯一名称。因此，导入的JS对象只是公开了一些属性，这些属性将生成的CSS类名称保存为值。
+
+例：
+
+在Post.css文件中
+
+。发表{ 
+    颜色：红色;
+}
+在发布组件文件中
+
+从'./Post.css'导入类； 
+ 
+const post = （）=> （   
+    < div className = { classes 。发表}> ... </ div >
+）;
+在此，classes.Post  是指Post  在导入的classes  对象上自动生成的属性。最终，该属性将简单地保存一个类似的值Post__Post__ah5_1 。
+
+因此，您的.Post  类会自动转换为Post__Post__ah5_1 在整个应用程序中唯一的其他类（）。您也不可能在其他组件中意外使用它，因为您不知道生成的字符串！您只能通过classes  对象访问它。而且，如果您将CSS文件（以相同的方式）导入另一个组件，则该classes  对象将拥有一个Post  属性，该属性将产生不同的（！）CSS类名。因此，它的作用域是给定的组件。
+
+顺便说一句，如果您还想在这样的.css  文件中定义一个全局（即未转换的）CSS类，则可以为选择器添加前缀:global 。
+
+例：
+
+:global .Post { ... } 
+
+现在，您可以className="Post"  在应用程序中的任何地方使用并接收该样式。
