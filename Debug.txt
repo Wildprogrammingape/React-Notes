@@ -1,0 +1,3 @@
+用 chrome developer tool --  Souce 可以用来debug逻辑型错误
+
+简单的error可以直接查看error message找到出错的那行即可
