@@ -1,0 +1,7 @@
+有几种style方式：
+
+radium -- 外部库
+
+styled component --外部package
+
+CSS module -- 纯CSS，推荐
