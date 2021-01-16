@@ -1,0 +1,3 @@
+Lifecycle hooks是一系列函数，只能用于class component中，注意它与react hooks 无关！
+
+五组常用的lifecycle hooks见 PDF  lifecycle-creation-learning-card
