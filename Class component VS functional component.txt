@@ -1,0 +1,12 @@
+class component:  can manage state
+语法： class XX extends Component
+功能：  Access to State,    Lifecycle hooks
+补充：  需要用到 this 关键词来access State and Props，因为props are properties of this component class
+用法：  需要操作state和lifecycle hooks， 但不能用React Hooks
+
+
+functional component:  can not manage state
+语法： const XX = props =>{   }
+功能： Access to State, 通过 useState{}
+补充： 需要用到props关键词来access Props，如props.XX
+用法： 想用React Hook的任何其他情况
