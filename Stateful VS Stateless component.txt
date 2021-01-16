@@ -1,0 +1,7 @@
+现在stateful component未必对应 class based component， stateless component未必对应 functional based component，
+
+因为React 16.8 的 Hooks出现，useState hooks可以用于manage states
+
+但是，在react application中，还是尽可能多的用stateless，也就是presentational component，
+
+因为便于管理，manageable，可以清楚看到功能的对应，have a predictable flow of data，便于维护，easy to maintain
