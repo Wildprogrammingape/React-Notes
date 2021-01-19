@@ -1,0 +1,44 @@
+以往我们遇到的 React 元素都只是 DOM 标签，比如 const element = <div />;
+React 元素也可以是用户自定义的组件，比如 const element = <Welcome name="Sara" />;
+
+于是，当 React 元素为用户自定义组件时，它会将 JSX 所接收的属性（attributes）以及子组件（children）转换为单个Object传递给组件，这个object被称之为 “props”。
+
+
+
+
+官方描述：
+
+Previously, we only encountered React elements that represent DOM tags:
+
+const element = <div />;
+However, elements can also represent user-defined components:
+
+const element = <Welcome name="Sara" />;
+When React sees an element representing a user-defined component, it passes JSX attributes and children to this component as a single object. We call this object “props”.
+
+
+For example, this code renders “Hello, Sara” on the page:
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+const element = <Welcome name="Sara" />;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+
+Let’s recap what happens in this example:
+
+1）我们调用 ReactDOM.render() 函数，并传入 <Welcome name="Sara" /> 作为参数。
+2）React 调用 Welcome 组件，并将 {name: 'Sara'} 作为 props 传入。
+3）Welcome 组件将 <h1>Hello, Sara</h1> 元素作为返回值。
+4）React DOM 将 DOM 高效地更新为 <h1>Hello, Sara</h1>。
+
+
+1）We call ReactDOM.render() with the <Welcome name="Sara" /> element.
+2）React calls the Welcome component with {name: 'Sara'} as the props.
+3）Our Welcome component returns a <h1>Hello, Sara</h1> element as the result.
+4）React DOM efficiently updates the DOM to match <h1>Hello, Sara</h1>.
