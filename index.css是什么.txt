@@ -1,0 +1,1 @@
+用于设定全局样式  global stying
