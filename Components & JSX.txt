@@ -1,3 +1,19 @@
+react官网对component的说明：
+
+从概念上讲，组件就像JavaScript函数。它们接受任意输入（称为“ props”），并返回描述应该在屏幕上显示的内容的React元素。
+
+components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+
+
+
+
+
+
+
+
+
+补充资料：
+
 Components are the core building block of React apps. Actually, React really is just a library for creating components in its core.
 
 A typical React app therefore could be depicted as a component tree - having one root component ("App") and then an potentially infinite amount of nested child components.
