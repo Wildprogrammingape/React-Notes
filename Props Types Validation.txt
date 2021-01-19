@@ -1,0 +1,6 @@
+React提供的包  用来验证 props.type
+
+下载： 
+
+
+npm install --save prop-types
