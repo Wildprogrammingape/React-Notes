@@ -1,0 +1,7 @@
+App component是react应用最顶层的组件，用来包裹所有其他组件。
+对于一个react app来说，最好是把每一个组件都放在一个文件夹下，并包含它相关的.js和.css文件
+
+
+The App component is the topmost component in a React app for wrapping all components.
+
+For a React app, the best practice is to put every component in its own directory containing its corresponding JS and CSS files.
