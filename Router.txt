@@ -1,0 +1,37 @@
+React router用于不同页面的跳转
+
+传统方式，向server发送request获得html页面，当跳转其他页面，重新发送另一个request到server然后获得html...
+
+React router的方式是，当跳转另一个页面如contact.html时， react 会 inject the component 到 browser
+这就是 React website (single page application)的特性
+
+
+npm install react-router-dom@5     下载react router
+
+
+Route path如下， /意思是主网页后面加 '/' ， 因此就是home page， 而/contact意思就是主网页后的contact页面
+
+/  
+Home.js
+
+/contact
+Contact.js
+
+/about
+About.js
+
+例子：
+          <Switch>
+
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+
+            <Route path="/create">
+              <Create></Create>
+            </Route>
+
+          </Switch>
+
+
+Switch的作用是 only one route 在browser中显示
