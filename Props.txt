@@ -1,21 +1,13 @@
-当我们需要dynamically输入argument时，如name、age, 可以用props来实现
+props是一个Object, 用来传递data从parent component到child component
 
 例子：
 
-function Person(props){
-  return(
-    <div class="person">
-      <h1>{props.name}</h1>
-      <p>Your age: {props.age}</p>
-    </div>
-  );
+// parent component中，加attribute：
+
+<BlogList blogs={blogs}></BlogList>
+
+// child component中，加props:
+
+const BlogList = (props) => {
+     const blogs = props.blogs;
 }
-
-ReactDOM.render(<Person name="Long Chen" age="24"/>, document.querySelector('#p1'));
-ReactDOM.render(<Person name="Barry" age="25"/>, document.querySelector('#p2'));
-
-
-
-
-
-动态参数格式：  {  }
