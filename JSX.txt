@@ -1,0 +1,1 @@
+语法类似html，babel将JSX转换为html然后render to DOM
