@@ -1,0 +1,68 @@
+Hook是一个特殊的function，比如useState用来改变stateless functional component的变量，当state改变的时候re-render DOM
+
+直接更改variable的话React不会re-render，所以浏览器显示的还是原变量
+
+
+
+另一个Hook: 
+
+useEffect() 内的function在每次render时触发
+
+语法：
+
+useEffect(function, [dependency]),  没dependency时每次render触发function，
+dependency为 [] 时只触发第一次render，[name]则为变量name改变时触发
+
+
+例子：
+
+const [name, setName] = useState('mario');
+
+const handleClick = () => {
+        setName('Long');
+}
+
+return (
+            <p>{name}</p>
+            <button onClick={handleClick}>Click Me</button> 
+);
+
+
+另一个Hook:
+
+useParams()  用于 router parameter id
+
+例子：
+
+App.js:
+
+            <Route path="/blogs/:id">
+              <BlogDetails></BlogDetails>
+            </Route>
+
+BlogDetails.js: 获取用于在endpoint输入的id
+
+          const {id} = useParams();
+
+
+
+另一个Hook ：
+
+useHistory() 用来返回页面
+
+例子：
+
+const history = useHistory();
+
+history.push('/');
+
+
+
+
+
+
+
+
+
+
+
