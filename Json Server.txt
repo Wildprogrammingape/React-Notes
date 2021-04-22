@@ -1,0 +1,13 @@
+本地的JSON文件作为server使用，top property即为 resource，
+
+npx json-server --watch data/db.json --port 8000
+
+可提供 endpoint 来访问该 server上的数据：  http://localhost:8000/blogs
+
+
+Endpoints:
+
+/blogs		GET		Fetch all blogs
+/ blogs/{id}	GET		Fetch a single blog
+/blogs		POST		Add a new blog
+/blogs/{id}		DELETE		Delete a blog
